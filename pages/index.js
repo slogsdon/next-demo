@@ -11,7 +11,7 @@ export default class extends React.Component {
       <ul>
         {this.props.posts && this.props.posts.map((post, key) => {
           return (
-              <li key={key}><Link href={ '/blog/' + post.slug + '/' }><a>Blog: { post.title.rendered }</a></Link></li>
+              <li key={key}><Link href={ '/blog?slug=' + post.slug } as={ '/blog/' + post.slug + '/' }><a>Blog: { post.title.rendered }</a></Link></li>
           );
         })}
         <li><Link href='/about/bar/'><a>About foo bar</a></Link></li>
