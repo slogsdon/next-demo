@@ -14,8 +14,8 @@ export default class extends React.Component {
               <li key={key}><Link href={ '/blog?slug=' + post.slug } as={ '/blog/' + post.slug + '/' }><a>Blog: { post.title.rendered }</a></Link></li>
           );
         })}
-        <li><Link href='/about/bar/'><a>About foo bar</a></Link></li>
-        <li><Link href='/about/baz/'><a>About foo baz</a></Link></li>
+        <li><Link href='/about?foo=bar' as='/about/bar/'><a>About foo bar</a></Link></li>
+        <li><Link href='/about?foo=baz' as='/about/baz/'><a>About foo baz</a></Link></li>
       </ul>
     );
   }
