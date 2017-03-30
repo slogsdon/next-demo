@@ -19,7 +19,7 @@ app.prepare()
 
     server.get('/', (req, res) => renderAndCache(req, res, '/'));
     server.get('/about/:foo', (req, res) => renderAndCache(req, res, '/about', req.params));
-    server.get('/blog', (req, res) => renderAndCache(req, res, '/'));
+    server.get('/blog/', (req, res) => renderAndCache(req, res, '/'));
     server.get('/blog/:slug', (req, res) => renderAndCache(req, res, '/blog', req.params));
     server.get('*', (req, res) => handler(req, res));
 
