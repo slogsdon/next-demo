@@ -7,8 +7,9 @@
     "node": "7.7.4"
   },
   "scripts": {
-    "dev": "node server.js",
     "build": "next build",
+    "dev": "node server.js",
+    "postinstall": "npm run build",
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
