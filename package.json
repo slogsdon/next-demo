@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
+  "engines": {
+    "node": "7.7.4"
+  },
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
